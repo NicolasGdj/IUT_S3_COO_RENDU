@@ -1,0 +1,8 @@
+
+*.class
+.settings/org.eclipse.jdt.core.prefs
+.classpath
+.project
+bin/fr/nicolasgdj/iut/s3/coo/td2/exo1/Answer
+bin/fr/nicolasgdj/iut/s3/coo/td2/exo2/TD2_Exo2_Question1.plantuml
+bin/fr/nicolasgdj/iut/s3/coo/td2/exo2/TD2_Exo2_Question1.svg

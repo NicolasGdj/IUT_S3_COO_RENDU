@@ -1,0 +1,50 @@
+
+@startuml
+
+title TD2 - Exercice 2 - Question 1
+
+interface Connectable {
+  +equiper(string)
+}
+ConnectableFactory ..> Connectable
+
+class Cafetiere{
+  +equiper(string)
+}
+Cafetiere ..|> Connectable
+
+class Radio{
+  +equiper(string)
+}
+Radio ..|> Connectable
+
+class Radiateur{
+  +equiper(string)
+}
+Radiateur ..|> Connectable
+
+interface ConnectableFactory{
+  
+  +create() : Connectable
+  +{static}create(string) : Connectable
+}
+
+class CafetiereFactory{
+  +create() : Connectable 
+}
+CafetiereFactory ..|> ConnectableFactory
+CafetiereFactory ..> Cafetiere
+
+class RadioFactory{
+  +create() : Connectable 
+}
+RadioFactory ..|> ConnectableFactory
+RadioFactory ..> Radio
+
+class RadiateurFactory{
+  +create() : Connectable 
+}
+RadiateurFactory ..|> ConnectableFactory
+RadiateurFactory ..> Radiateur
+
+@enduml
